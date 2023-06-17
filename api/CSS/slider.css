@@ -1,0 +1,228 @@
+* {box-sizing: border-box}
+body {margin:0}
+.mySlides {display: none}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    top: 70px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    height: 600px;
+    z-index: 45;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    padding: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.7s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    background-image: url("../Imagens/procimo.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+    opacity: 0.4;
+}
+
+.prev{
+    background-image: url("../Imagens/anterior.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50% 50%;
+    background-size: 50px 50px;
+    opacity: 0.4;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 60px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.titulo-encima-imagem{
+    position: relative;
+    text-align: center;
+    font-size: 45px;
+    color: #ffaa22;
+    text-shadow: 2px 2px 3px #997b3f;
+    font-family: cursive;
+    margin-top: 5px;
+    display: block;
+    font-weight: bold;
+}
+.titulo-encima-imagem-2{
+    position: relative;
+    font-size: 60px;
+    color: #ffaa22;
+    text-shadow: 2px 2px 3px #997b3f;
+    font-family: cursive;
+    display: block;
+    font-weight: bold;
+}
+
+
+.texto-encima-imagem{
+    position: absolute; 
+    color: #f1f1f1; 
+    width: 40%;
+    transition: .5s ease;
+    opacity:1;
+    color: white;
+    font-size: 20px;
+    padding: 6px;
+    text-align: center;
+    text-indent : 0em;
+}
+
+.texto-encima-1{
+    left: 4%; 
+    top: 30%;
+}
+.texto-encima-2{
+    right: 4%; 
+    top: 20%;
+}
+.texto-encima-2 > .botao-classes{
+    margin-right: 75px;
+    float: right;
+}
+.texto-encima-2 > .titulo-encima-imagem-2{
+    text-align: right;
+    text-indent: 0em;
+}
+
+.texto-encima-3{
+    right: 0;
+    top: 1%;
+    position: absolute;
+}
+
+.texto-encima-4{
+    left: 4%;
+    top: 5%;
+    position: absolute;
+}
+
+.texto-encima-4 > .botao-classes{
+    margin-left: 75px;
+    float: left;
+}
+.texto-encima-4 > .titulo-encima-imagem-2{
+    text-align: left;
+    text-indent: 0em;
+}
+
+.texto-encima-5{
+    right: 4%;
+    top: 3%;
+    position: absolute;
+}
+
+.texto-encima-5 > .botao-classes{
+    margin-right: 75px;
+    float: right;
+}
+.texto-encima-5 > .titulo-encima-imagem-2{
+    text-align: right;
+    text-indent: 0em;
+}
+
+
+.estrela{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* The dots/bullets/indicators */
+.slide-botoes{
+    position: absolute;
+    bottom: 7px;
+    margin-left: 47%;
+    margin-right: auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  bottom: -50px;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #5c5c5c;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 2}
+}
+
+
+.img-slide{
+    width:100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.img-slide-1{
+    width:100%;
+    height: 600px;
+    object-fit: contain;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.video-slide{
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+}
+
