@@ -1,4 +1,5 @@
 <?php
+    phpinfo();
     include 'header.php';
     include 'menu.php';
     $con="mysql:dbname=receitas_simples;host=localhost;charset=utf8";
