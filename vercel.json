@@ -1,7 +1,23 @@
 {
-    "functions": {
-      "api/*.php": {
-        "runtime": "vercel-php@0.6.0"
-      }
+  "functions": {
+    "api/**/*.php": {
+      "runtime": "vercel-php@0.6.0"
+    }
+  },
+  "routes": [
+    { "src": "/Carnes/(.*)", "dest": "/api/Carnes/$1" },
+    { "src": "/CSS/(.*)", "dest": "/api/CSS/$1" },
+    { "src": "/icones/(.*)", "dest": "/api/icones/$1" },
+    { "src": "/Imagens/(.*)", "dest": "/api/Imagens/$1" },
+    { "src": "/nbproject/(.*)", "dest": "/api/nbproject/$1" },
+    { "src": "/(.*)", "dest": "/api/$1" }
+  ],
+  "env": {
+    "NOW_PHP_FOO": "bar3"
+  },
+  "build": {
+    "env": {
+      "NOW_PHP_DEBUG": "1"
     }
   }
+}
